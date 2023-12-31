@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://obsproject.com/blog -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title _msttexthash="16477825" _msthash="0">新闻 |OBS总线</title>
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta name="description" content="OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.">
+    <meta name="keywords" content="OBS, OBS Studio, Stream, Video, Live Streaming, Recording, Games, Twitch, YouTube, Livestream, Open Broadcaster Software">
+    <!--<link rel="preload" href="/assets/fonts/open-sans-v18-latin-ext_latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>-->
+  <link href="./blog_files/blurple.min.css" rel="stylesheet">    <link rel="alternate" type="application/rss+xml" title="RSS Feed obsproject.com" href="https://obsproject.com/blog/rss">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://obsproject.com/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://obsproject.com/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://obsproject.com/favicon-16x16.png">
+                    <link rel="alternate" hreflang="cs" href="https://obsproject.com/cs/blog">
+                        <link rel="alternate" hreflang="da" href="https://obsproject.com/da/blog">
+                        <link rel="alternate" hreflang="de" href="https://obsproject.com/de/blog">
+                        <link rel="alternate" hreflang="en" href="https://obsproject.com/blog">
+                        <link rel="alternate" hreflang="es" href="https://obsproject.com/es/blog">
+                        <link rel="alternate" hreflang="eu" href="https://obsproject.com/eu/blog">
+                        <link rel="alternate" hreflang="fi" href="https://obsproject.com/fi/blog">
+                        <link rel="alternate" hreflang="fr" href="https://obsproject.com/fr/blog">
+                        <link rel="alternate" hreflang="hu" href="https://obsproject.com/hu/blog">
+                        <link rel="alternate" hreflang="ja" href="https://obsproject.com/ja/blog">
+                        <link rel="alternate" hreflang="ko" href="https://obsproject.com/ko/blog">
+                        <link rel="alternate" hreflang="pt-br" href="https://obsproject.com/pt-br/blog">
+                        <link rel="alternate" hreflang="ru" href="https://obsproject.com/ru/blog">
+                        <link rel="alternate" hreflang="sv" href="https://obsproject.com/sv/blog">
+                        <link rel="alternate" hreflang="tr" href="https://obsproject.com/tr/blog">
+                        <link rel="alternate" hreflang="uk" href="https://obsproject.com/uk/blog">
+                        <link rel="alternate" hreflang="zh-cn" href="https://obsproject.com/zh-cn/blog">
+              <script type="text/javascript" async="" src="./blog_files/analytics.js.下载"></script><script type="text/javascript" async="" src="./blog_files/js"></script><script async="" src="./blog_files/js(1)"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-34644124-1', {
+      'anonymize_ip': true
+    });
+  </script>
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+
+<body class="">
+
+  <div id="wrapper">
+
+    <header id="header" class="cf">
+      <a class="logo" href="https://obsproject.com/">
+        <img src="./blog_files/new_icon_small-r.png" alt="OBS总线" _mstalt="23764" _msthash="1">
+      </a>
+
+      <div class="header_title">
+        <div class="header_title_main" _msttexthash="7866235" _msthash="2">OBS总线</div>
+        <div class="header_subtitle"><font _mstmutation="1" _msttexthash="16828682" _msthash="3">Open Broadcaster 软件</font><span class="smalltext" _msttexthash="6779890" _msthash="4">®️</span></div>
+      </div>
+
+      <div id="SocialButtons">
+
+        <div id="DiscordButton">
+          <a href="https://discord.gg/obsproject" target="_blank" aria-label="OBS不和谐" _mstaria-label="145522" _msthash="5">
+            <img src="./blog_files/Discord.svg" class="icon-discord">
+          </a>
+          <span class="tooltip" _msttexthash="4069247" _msthash="6">不和</span>
+        </div>
+
+        <div id="TwitterButton">
+          <a rel="me" href="https://twitter.com/OBSProject" target="_blank" aria-label="OBS推特" _mstaria-label="152204" _msthash="7">
+            <i class="icon-twitter"></i>
+          </a>
+          <span class="tooltip" _msttexthash="1985711" _msthash="8">唽</span>
+        </div>
+
+        <div id="MastodonButton">
+          <a rel="me" href="https://mastodon.social/@OBSProject" target="_blank" aria-label="OBS乳齿象" _mstaria-label="172289" _msthash="9">
+            <img src="./blog_files/Mastodon.svg" class="icon-mastodon">
+          </a>
+          <span class="tooltip" _msttexthash="10278606" _msthash="10">乳齿象</span>
+        </div>
+
+        <div id="GitHubButton">
+          <a rel="me" href="https://github.com/obsproject/obs-studio" target="_blank" aria-label="OBS Studio GitHub" _mstaria-label="267124" _msthash="11">
+            <i class="icon-github"></i>
+          </a>
+          <span class="tooltip" _msttexthash="5199792" _msthash="12">GitHub的</span>
+        </div>
+        <!--
+          <div id="BlogButton">
+            <a href="https://obsproject.com/blog">
+              <i class="icon-blog"></i>
+            </a>
+          </div>
+
+          <div id="LivechatButton">
+            <a href="https://obsproject.com/chat" target="_blank">
+              <i class="icon-comment">Community Chat</i>
+            </a>
+          </div>
+        -->
+
+        <div id="ContributeButton">
+          <a href="https://obsproject.com/contribute">
+            <i class="icon-heart" _msttexthash="6354283" _msthash="13">贡献</i>
+          </a>
+        </div>
+
+      </div>
+
+      <nav>
+
+  <ul class="menu cf">
+          <li>
+                <a href="https://obsproject.com/" _msttexthash="2136498" _msthash="14">家</a>
+
+        
+      </li>
+          <li>
+                <a href="https://obsproject.com/download" _msttexthash="5638321" _msthash="15">下载</a>
+
+        
+      </li>
+          <li>
+                <a class="active" href="https://obsproject.com/blog" _msttexthash="6361992" _msthash="16">新闻</a>
+
+        
+      </li>
+          <li>
+                <a href="https://obsproject.com/help" _msttexthash="4394754" _msthash="17">帮助</a>
+
+        
+      </li>
+          <li>
+                <a href="https://obsproject.com/forum/" _msttexthash="5580822" _msthash="18">论坛</a>
+
+        
+      </li>
+      </ul>
+
+</nav>
+    </header>
+<div class="pagewidth blog_list">
+
+  <div class="headerpusher"></div>
+
+  <div class="med_width">
+
+    
+    <div class="bpheader">
+              <h1 _msttexthash="15720523" _msthash="19">OBS最新消息</h1>
+      
+          </div>
+
+    
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/obs-studio-29-release-notes" _msttexthash="29967392" _msthash="20">OBS Studio 29 版本说明</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2023-05-02 14:00:00" _msttexthash="3125837" _msthash="21">2 5月 2023</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 1 -->
+      <div class="bptags">
+      <ul>
+                    <li>
+                              <a href="https://obsproject.com/blog/tag/releases" _msttexthash="6091774" _msthash="22">释放</a>
+                          </li>
+              </ul>
+    </div>
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p _msttexthash="48139130" _msthash="23">OBS Studio 29.1 现已发布！</p>
+<p _msttexthash="1210919151" _msthash="24">此版本为 YouTube 添加了 AV1/HEVC 流媒体（测试版功能）、简单输出模式下的多个音轨、预加载 stinger 转场、新的音频编码器设置、更快的加载/更新以及各种其他修复。</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/obs-studio-29-release-notes" _msttexthash="13292175" _msthash="25">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/obs-studio-and-obs-websocket-join-forces" _msttexthash="48478131" _msthash="26">OBS Studio与obs-websocket强强联手</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+      <div class="bpinfo bpauthor">
+              <a href="https://obsproject.com/blog/author/tt2468" _msttexthash="5930743" _msthash="27">来自 tt2468</a>
+          </div>
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2022-08-03 03:25:00" _msttexthash="13006175" _msthash="28">8月 3rd， 2022</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 0 -->
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p _msttexthash="4883057621" _msthash="29">就在大约 8 个月前，OBS 项目的成员找到 Palakis 和我，提出了一个想法：让 WebSocket 功能成为 OBS Studio 的核心功能。7 月 3 日，我很高兴地宣布 obs-websocket 版本 5 的独立版本发布。这个版本是对流行的插件obs-websocket的完全重写。经过一年多的开发，这个版本带来了新的协议、许多强大的功能，并大大提高了可靠性。您可以<a href="https://github.com/obsproject/obs-websocket/wiki/Notable-changes-between-4.x-and-5.x" _istranslated="1">在此处</a>看到显着的变化。</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/obs-studio-and-obs-websocket-join-forces" _msttexthash="13292175" _msthash="30">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/the-tale-of-a-legendary-hotfix" _msttexthash="95430413" _msthash="31">27.2 发生了什么：传奇修补程序的故事</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+      <div class="bpinfo bpauthor">
+              <a href="https://obsproject.com/blog/author/Lain" _msttexthash="12956671" _msthash="32">作者：Lain</a>
+          </div>
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2022-02-23 08:30:00" _msttexthash="13866294" _msthash="33">2月23rd，2022</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 0 -->
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p _msttexthash="275501499" _msthash="34">那是疯狂的一周。让我们谈谈 27.2 发生了什么，以及我们过去一周必须做什么。</p>
+<p _msttexthash="7334534168" _msthash="35">在 Windows 版本 27.2 中，我们更新了所有依赖项。依赖项是由外部源代码组成的库;它不是 OBS 源代码，而是 OBS 的主要功能和特性所依赖的东西。有时，这可能是一个功能，如软件 H.264 编码，它依赖于 x264 编码器库，或者一个功能，如浏览器源代码，它依赖于更大的依赖关系：Chromium（支持 Google Chrome 的浏览器引擎）。更具体地说，浏览器源利用 Chromium 嵌入式框架 （CEF） 将网页呈现为源，或将网页呈现为 OBS 内部的面板。</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/the-tale-of-a-legendary-hotfix" _msttexthash="13292175" _msthash="36">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/obs-and-streamlabs-commit-to-long-term-collaboration" _msttexthash="59112651" _msthash="37">OBS 和 Streamlabs 致力于长期合作</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2021-12-24 10:00:00" _msttexthash="15070653" _msthash="38">12月24th，2021</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 0 -->
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p _msttexthash="529135932" _msthash="39">首先，我们要再次感谢你们对OBS的热爱和支持。 团队中的每个人都对你们对我们工作的热情感到无比感激和谦卑。</p>
+<p _msttexthash="666943381" _msthash="40">其次，我们想分享一些积极的消息：在过去的几周里，Lain和团队一直在与Streamlabs进行讨论，现在我们有一个前进的计划</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/obs-and-streamlabs-commit-to-long-term-collaboration" _msttexthash="13292175" _msthash="41">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/announcing-the-obs-project-bounty-program" _msttexthash="41843126" _msthash="42">宣布OBS项目赏金计划</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+      <div class="bpinfo bpauthor">
+              <a href="https://obsproject.com/blog/author/Dodgepong" _msttexthash="6025006" _msthash="43">来自 Dodgepong</a>
+          </div>
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2021-08-05 17:00:00" _msttexthash="14898650" _msthash="44">八月5th，2021</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 0 -->
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p _msttexthash="2432901315" _msthash="45">两年多前，当我们首次宣布OBS项目将开始接受赞助时，我们的主要目标是为其贡献者促进OBS开发的可持续性。通过您的慷慨解囊，我们已经能够支持<a href="https://obsproject.com/blog/dillon-pentz-joins-the-obs-project-as-full-time-developer" _istranslated="1">两名全职开发人员</a>，并回馈社区的几位贡献者，以感谢他们的工作。为此，我们非常感激！</p>
+<p _msttexthash="2307308562" _msthash="46">然而，一段时间以来，我们一直想让我们的赞助资金走得更远。因此，今天，我们宣布推出 <strong _istranslated="1">OBS 项目赏金计划</strong>。这项新计划使我们能够与开发者社区分享我们的最高优先事项，并为那些为满足这些需求而提供时间和专业知识的开发者提供补偿。</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/announcing-the-obs-project-bounty-program" _msttexthash="13292175" _msthash="47">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/dillon-pentz-joins-the-obs-project-as-full-time-developer" _msttexthash="93888054" _msthash="48">Dillon Pentz 作为全职开发人员加入 OBS 项目</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+      <div class="bpinfo bpauthor">
+              <a href="https://obsproject.com/blog/author/Warchamp7" _msttexthash="6013982" _msthash="49">来自 Warchamp7</a>
+          </div>
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2021-08-03 02:25:00" _msttexthash="13005967" _msthash="50">8月3rd，2021</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 0 -->
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p _msttexthash="1504145851" _msthash="51">今天，我们很高兴地宣布 Dillon Pentz 成为 OBS 项目的全职开发人员。自 2017 年以来，Dillon 一直是社区的定期贡献者，致力于屏幕阅读器改进、过渡预览和新的“丢失文件”对话框等功能。</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/dillon-pentz-joins-the-obs-project-as-full-time-developer" _msttexthash="13292175" _msthash="52">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/obs-studio-27-released" _msttexthash="218190336" _msthash="53">OBS Studio 27 发布，具有撤消/重做、macOS、Linux 等浏览器停靠功能</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+      <div class="bpinfo bpauthor">
+              <a href="https://obsproject.com/blog/author/WizardCM" _msttexthash="5990465" _msthash="54">来自 WizardCM</a>
+          </div>
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2021-06-01 18:00:00" _msttexthash="13007969" _msthash="55">6月1st，2021</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 1 -->
+      <div class="bptags">
+      <ul>
+                    <li>
+                              <a href="https://obsproject.com/blog/tag/releases" _msttexthash="6091774" _msthash="56">释放</a>
+                          </li>
+              </ul>
+    </div>
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p _msttexthash="3140500779" _msthash="57">经过长时间的测试，我们很高兴地宣布，OBS Studio 27 现在可供所有人使用！如果您已经安装了 OBS，则下次启动它时，您将收到更新警报。如果您是第一次下载 OBS，或者想使用便携式版本，您可以从<a href="https://obsproject.com/download" _istranslated="1">我们的网站下载</a>。如果您关闭更新通知，可以从 Windows 和 macOS 上的“帮助”菜单手动触发它。</p>
+<p _msttexthash="1966152539" _msthash="58">感谢所有在测试期间通过<a href="https://discord.gg/obsproject" _istranslated="1">我们 Discord</a> 上的 <strong _istranslated="1">#beta-testing</strong> 频道下载测试版本、报告错误并验证错误是否得到修复的人。每份报告都意味着在未来几天内进行修补程序修复的理由更少，并最终为每个人带来更好的体验。</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/obs-studio-27-released" _msttexthash="13292175" _msthash="59">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/youtube-becomes-premier-sponsor-of-the-obs-project" _msttexthash="76257675" _msthash="60">YouTube 成为 OBS 项目的主要赞助商</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2020-12-07 19:00:00" _msttexthash="14209429" _msthash="61">12月7th，2020</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 0 -->
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p><a href="https://www.youtube.com/"></a></p><figure class="centered" _msthidden="1"><a href="https://www.youtube.com/"><img alt="YouTube Logo" src="./blog_files/yt_logo_mono_dark_small.png" _msthidden="A" _mstalt="174772" _msthash="62"></a></figure><p></p>
+<p _msttexthash="2447489265" _msthash="63">我们很高兴地宣布，YouTube 已成为 OBS 项目的主要赞助商！从该计划的早期开始，我们的大量用户就使用 OBS 专门为 YouTube 创建视频内容，无论是直播还是录制用于后期制作。我们非常荣幸能够将互联网上最大的内容创作平台 YouTube 作为我们的赞助商之一。</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/youtube-becomes-premier-sponsor-of-the-obs-project" _msttexthash="13292175" _msthash="64">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/five-simple-tips-for-new-streamers" _msttexthash="44301803" _msthash="65">给新主播的五个简单提示</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2020-03-25 00:30:00" _msttexthash="15680379" _msthash="66">三月 25th， 2020</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 0 -->
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p _msttexthash="5855303051" _msthash="67">由于 COVID-19 导致很多人留在里面，你们中很有可能有一些玩游戏的人会想开始直播。当我们都保持距离时，这是一件很棒的事情，因为它可以让您社交和健谈，让朋友参与进来，并在网上度过愉快的时光。OBS Studio 使流媒体比以往任何时候都更容易上手，而且完全免费。如果您想进行这方面的设置，<a href="https://obsproject.com/wiki/OBS-Studio-Quickstart" rel="noopener noreferrer" target="_blank" _istranslated="1">请查看我们的快速入门指南</a>！（或者，<a href="https://www.youtube.com/watch?v=5rlrDIwnGGQ&amp;t=0s&amp;list=PLT3Ure7_kYHwj8oT3AV-pZ4_r7yp6mDg-" rel="noopener noreferrer" target="_blank" _istranslated="1">查看 Nerd 或 Die 的快速入门指南视频</a>！</p>
+<p _msttexthash="171211586" _msthash="68">考虑到这一点，这里有一些提示可以帮助您开始直播！</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/five-simple-tips-for-new-streamers" _msttexthash="13292175" _msthash="69">阅读更多...</a>
+
+        </article>
+
+              <article class="blogpost">
+          <header>
+            <h2>
+              <a href="https://obsproject.com/blog/facebook-becomes-a-premiere-sponsor" _msttexthash="85677696" _msthash="70">Facebook成为OBS项目的首要赞助商</a>
+            </h2>
+          </header>
+
+          
+<div class="bpheader cf">
+
+  <!-- Author -->
+  
+  <!-- Date -->
+  <div class="bpinfo bpdate">
+    <time datetime="2020-02-19 04:00:00" _msttexthash="15692703" _msthash="71">二月 19th， 2020</time>
+  </div>
+
+  <!-- Tags -->
+  <!-- Valid: 0 -->
+  
+  <br>
+
+</div>
+<!-- End Post Header -->
+          <div class="bp_content" style="max-height: 340px; overflow: hidden;">
+                          <p><a href="https://facebook.com/"></a></p><figure class="centered" _msthidden="1"><a href="https://facebook.com/"><img alt="Facebook Logo" src="./blog_files/fb-corporate-small.png" _msthidden="A" _mstalt="197379" _msthash="72"></a></figure><p></p>
+<p _msttexthash="244962848" _msthash="73">我们很高兴地宣布，Facebook 是 OBS 项目的最新首屈一指的赞助商！</p>
+<p _msttexthash="2538939390" _msthash="74">Facebook 长期以来一直相信直播视频在建立社区方面的力量，正因为如此，他们表现出了支持直播行业的热情。他们决定成为 OBS 项目的首要赞助商，确保世界各地的人们将继续获得免费、开放且易于使用的工具，将他们喜爱的内容流式传输到世界各地。</p>            
+          </div>
+
+          <a class="bpjump" href="https://obsproject.com/blog/facebook-becomes-a-premiere-sponsor" _msttexthash="13292175" _msthash="75">阅读更多...</a>
+
+        </article>
+
+      
+
+              <nav id="pager">
+
+          
+                      <div class="next-post">
+              <a class="next" href="https://obsproject.com/blog/page:2" _msttexthash="17367233" _msthash="76">较早的帖子 ›</a>
+            </div>
+          
+        </nav>
+
+          
+  </div>
+
+</div>
+
+  <div class="footer_push"></div>
+</div>
+<!-- End Wrapper -->
+  
+  <footer id="footer" class="footer cf">
+    <div class="footer_extra">
+      <div class="footer_left">
+        <div class="footer_row">
+          <div class="logo"><img src="./blog_files/new_icon_small-r.png"></div>
+          <div class="footer_title" _msttexthash="9451832" _msthash="77">OBS项目</div>
+        </div>
+        <div class="footer_row footer_social">
+          <a href="https://twitter.com/OBSProject" target="_blank" aria-label="OBS推特" _mstaria-label="152204" _msthash="78">
+            <i class="icon-twitter"></i>
+          </a>
+          <a href="https://facebook.com/OpenBroadcasterSoftware" target="_blank" aria-label="OBS脸书" _mstaria-label="165464" _msthash="79">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="https://obsproject.com/discord" target="_blank" aria-label="OBS不和谐" _mstaria-label="145522" _msthash="80">
+            <img src="./blog_files/Discord.svg" class="icon-discord">
+          </a>
+          <a href="https://github.com/obsproject/obs-studio" target="_blank" aria-label="OBS GitHub上" _mstaria-label="118677" _msthash="81">
+            <i class="icon-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer_right">
+
+        <!-- App -->
+        <div class="footer_items"><div class="footer_category" _msttexthash="9713522" _msthash="82">OBS工作室</div>
+          <a href="https://obsproject.com/download" aria-label="下载" _mstaria-label="113308" _msthash="83" _msttexthash="5638321">下载</a>
+          <a href="https://ideas.obsproject.com/" target="_blank" aria-label="功能建议" _mstaria-label="394199" _msthash="84" _msttexthash="5156073">想法</a>
+          <a href="https://obsproject.com/privacy-policy" aria-label="隐私策略" _mstaria-label="231452" _msthash="85" _msttexthash="14350128">隐私策略</a>
+        </div>
+
+        <!-- Contribute -->
+        <div class="footer_items"><div class="footer_category" _msttexthash="6354283" _msthash="86">贡献</div>
+          <a href="https://github.com/obsproject/obs-studio" target="_blank" aria-label="OBS GitHub上" _mstaria-label="118677" _msthash="87" _msttexthash="5199792">GitHub的</a>
+          <a href="https://opencollective.com/obsproject" aria-label="Open Collective 上的 OBS" _mstaria-label="402922" _msthash="88" _msttexthash="12064468">开放集体</a>
+          <a href="https://www.patreon.com/obsproject/overview" aria-label="Patreon 上的 OBS" _mstaria-label="197418" _msthash="89" _msttexthash="12969684">帕特雷恩</a>
+        </div>
+
+        <!-- Help -->
+        <div class="footer_items"><div class="footer_category" _msttexthash="4993053" _msthash="90">支持</div>
+          <a href="https://obsproject.com/help" aria-label="帮助门户" _mstaria-label="154765" _msthash="91" _msttexthash="12153336">帮助门户</a>
+          <a href="https://obsproject.com/forum/" aria-label="论坛" _mstaria-label="79989" _msthash="92" _msttexthash="5580822">论坛</a>
+          <a href="https://obsproject.com/discord" aria-label="官方不和谐" _mstaria-label="278005" _msthash="93" _msttexthash="4069247">不和</a>
+          <a href="https://obsproject.com/wiki" aria-label="支持 Wiki" _mstaria-label="182416" _msthash="94" _msttexthash="5299788">维基</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p _msttexthash="880294818" _msthash="95">© 2012 - 2023.OBS 和 OBS Studio 由 Lain 创建和维护。<a href="https://github.com/obsproject/OBS-studio/graphs/contributors" _istranslated="1">由 OBS Studio 贡献者</a>开发。<br _istranslated="1">网站由 <a href="https://twitter.com/Warchamp7" _istranslated="1">Warchamp7</a> 设计和创建，由 <a href="https://getkirby.com/made-with-kirby-and-love" _istranslated="1">Kirby CMS</a> 提供支持。下载由 <a href="https://fastly.com/" _istranslated="1">Fastly</a> 提供支持。</p>    </div>
+    <br>
+    <div class="languages" arial-label="Select Language">
+    <p>
+                          <font _mstmutation="1" _msttexthash="549132922" _msthash="96"><a href="https://obsproject.com/cs/blog" _mstmutation="1" _istranslated="1">捷克</a><a href="https://obsproject.com/da/blog" _mstmutation="1" _istranslated="1">语 Dansk</a> <a href="https://obsproject.com/de/blog" _mstmutation="1" _istranslated="1">Deutsch</a> <a href="https://obsproject.com/es/blog" _mstmutation="1" _istranslated="1">Español</a> <a href="https://obsproject.com/eu/blog" _mstmutation="1" _istranslated="1">Euskara</a> <a href="https://obsproject.com/fi/blog" _mstmutation="1" _istranslated="1">Suomi</a> <a href="https://obsproject.com/fr/blog" _mstmutation="1" _istranslated="1">Français</a> <a href="https://obsproject.com/hu/blog" _mstmutation="1" _istranslated="1">Magyar</a> <a href="https://obsproject.com/ja/blog" _mstmutation="1" _istranslated="1">日本語</a> <a href="https://obsproject.com/ko/blog" _mstmutation="1" _istranslated="1">한국어</a> <a href="https://obsproject.com/pt-br/blog" _mstmutation="1" _istranslated="1">Português do Brasil</a> <a href="https://obsproject.com/ru/blog" _mstmutation="1" _istranslated="1">ру́сский</a> <a href="https://obsproject.com/sv/blog" _mstmutation="1" _istranslated="1">Svenska</a> <a href="https://obsproject.com/tr/blog" _mstmutation="1" _istranslated="1">Türkçe</a> <a href="https://obsproject.com/uk/blog" _mstmutation="1" _istranslated="1">українська</a> <a href="https://obsproject.com/zh-cn/blog" _mstmutation="1" _istranslated="1">中文（简体）</a></font> 
+                  </p>
+    </div>
+
+  </footer>
+
+
+</body></html>
